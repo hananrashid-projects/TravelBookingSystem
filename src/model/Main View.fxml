@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="383.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.MainViewControllers">
+   <top>
+      <Label fx:id="TitleLable" alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="315.0" text="Travel Booking System" textAlignment="CENTER" textFill="#950606" translateY="20.0" underline="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </top>
+   <right>
+      <Button fx:id="HotelsButton" mnemonicParsing="false" onAction="#handleHotels" prefHeight="50.0" prefWidth="180.0" text="Hotels" translateX="-20.0" BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+               <image>
+                  <Image url="@../../../../../OneDrive/Desktop/Pictures/Hotels.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </right>
+   <left>
+      <Button fx:id="FlightsButton" mnemonicParsing="false" onAction="#handleFlights" prefHeight="50.0" prefWidth="180.0" text="Flights" translateX="20.0" BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+               <image>
+                  <Image url="@../../../../../OneDrive/Desktop/Pictures/Flights.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </left>
+   <bottom>
+      <Button fx:id="BookingsButton" mnemonicParsing="false" onAction="#handleBookings" prefHeight="50.0" prefWidth="180.0" text="Bookings" translateY="-10.0" BorderPane.alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+               <image>
+                  <Image url="@../../../../../OneDrive/Desktop/Pictures/Bookings.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+   </bottom>
+</BorderPane>
